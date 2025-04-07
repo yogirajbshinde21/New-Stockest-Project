@@ -1,0 +1,106 @@
+/* Container for the window */
+.container {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+  }
+  
+  #sell-window {
+    border: 2px solid #ff4d4d; /* Red border to indicate selling */
+  }
+  
+  /* Regular order section */
+  .regular-order {
+    margin-bottom: 15px;
+  }
+  
+  /* Input fields */
+  .inputs {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .inputs fieldset {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .inputs legend {
+    font-size: 14px;
+    padding: 0 5px;
+  }
+  
+  .inputs input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
+  /* Buttons section */
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .buttons span {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .buttons div {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Button styles */
+  .btn {
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-blue {
+    background-color: #1780f0;
+    color: white;
+  }
+  
+  .btn-blue:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-grey {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  .btn-grey:hover {
+    background-color: #5a6268;
+  }
+  
+  /* Draggable cursor */
+  #sell-window {
+    cursor: grab;
+  }
+  
+  #sell-window:active {
+    cursor: grabbing;
+  }
+  
